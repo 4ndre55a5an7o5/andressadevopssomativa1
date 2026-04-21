@@ -31,3 +31,11 @@ pytest
 ```bash
 curl http://localhost:5000/health
 ```
+
+## Docker
+
+```bash
+docker build -t devops-study-api .
+docker run -d -p 5000:5000 --name devops-study-api devops-study-api
+docker ps
+```
