@@ -31,3 +31,13 @@ pytest
 ```bash
 curl http://localhost:5000/health
 ```
+
+## Docker
+
+```bash
+docker build -t devops-study-api .
+docker run -d -p 5000:5000 --name devops-study-api devops-study-api
+docker ps
+```
+
+O workflow de CD tambem valida o endpoint `/health` para garantir que o container sobe corretamente.
